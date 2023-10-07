@@ -4,6 +4,6 @@ from django.contrib import admin
 
 urlpatterns = [
     path('', include('apps.urls')),
-    path('admin/', admin.site.urls),
+    path('bo_pj/', admin.site.urls),
 ]
 

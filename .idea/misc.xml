@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="Black">
+    <option name="executionMode" value="BINARY" />
+    <option name="pathToExecutable" value="$USER_HOME$/.pyenv/shims/black" />
+    <option name="sdkUUID" value="7cf48920-7a19-4dfb-971a-b541b5e9a9f2" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (project_journey) (2)" project-jdk-type="Python SDK" />
   <component name="PyCharmProfessionalAdvertiser">
     <option name="shown" value="true" />

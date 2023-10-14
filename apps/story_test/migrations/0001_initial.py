@@ -34,21 +34,21 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('story_text', models.TextField()),
-                ('choices_available', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='admin_panel.choice')),
+                ('choices_available', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='story_test.choice')),
             ],
         ),
         migrations.CreateModel(
             name='Player',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('player_objects', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='admin_panel.object')),
-                ('progression', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='admin_panel.story')),
+                ('player_objects', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='story_test.object')),
+                ('progression', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='story_test.story')),
                 ('user_id', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to=settings.AUTH_USER_MODEL)),
             ],
         ),
         migrations.AddField(
             model_name='choice',
             name='next_story',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='admin_panel.story'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='story_test.story'),
         ),
     ]

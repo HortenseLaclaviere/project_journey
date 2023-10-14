@@ -1,0 +1,148 @@
+{
+  "textes_histoire": [
+    {
+      "id": 1,
+      "texte": "Vous sentez un rayon de soleil frapper votre visage, vos yeux sont fermés et vous sentez un à un vos sens se réveiller. Vous sentez l’odeur de la nature après la pluie, et sous vos mains un mélange d’herbe et de mousse. Au loin, vous entendez de nombreux bruits, comme des petits animaux qui s’affairent, et des chants d’oiseaux qui s'élèvent vers le ciel.",
+      "choix_disponibles": [
+        {
+          "id": 1,
+          "texte": "Vous vous rendormez",
+          "texte_suivant": 2,
+          "objet_necessaire": null
+        },
+        {
+          "id": 2,
+          "texte": "Vous ouvrez les yeux",
+          "texte_suivant": 3,
+          "objet_necessaire": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texte": "Tout cela n’était qu’un rêve, quand vous vous réveillez à nouveau, votre réveil sonne, et petit à petit le souvenir d’une étrange aventure effleurée du bout des doigts s’efface de votre esprit…",
+      "choix_disponibles": [
+        {
+          "id": 3,
+          "texte": "Recommencer",
+          "texte_suivant": 4,
+          "objet_necessaire": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texte": "Éblouis par les rayons du soleil, d’abord vous ne voyez rien. Puis, petit à petit, vous découvrez une forêt touffue tout autour de vous. Vous n’avez aucune idée de comment vous êtes arrivé là, ni même de qui vous êtes. Une seule pensée vous traverse l’esprit :",
+      "choix_disponibles": [
+        {
+          "id": 4,
+          "texte": "Une grande aventure va commencer",
+          "texte_suivant": 4,
+          "objet_necessaire": null
+        },
+        {
+          "id": 5,
+          "texte": "La terreur glace vos entrailles, que faites vous là ?",
+          "texte_suivant": 6,
+          "objet_necessaire": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texte": "Vous décidez de partir explorer les environs, et au bout d'un certain temps à marcher un peu au hasard dans cette forêt vous rencontrez un homme entre deux âges, qui à l'air entouré d'une sorte de halo bleu/vert, mais c'est surement votre imagination, ou le reflet du soleil qui vous joue des tours.",
+      "choix_disponibles": [
+        {
+          "id": 6,
+          "texte": "Vous allez lui parler",
+          "texte_suivant": 5,
+          "objet_necessaire": null
+        },
+        {
+          "id": 7,
+          "texte": "Vous préférez rebrousser chemin",
+          "texte_suivant": 7,
+          "objet_necessaire": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texte": "\"L'homme\"? vous salue amicalement, et vous demande ce que vous faites dans le coin, quand il comprends que vous avez l'air un peu perdu, il prend un air soucieux et vous mets en garde \"les ombres, prenez garde aux ombres\" et vous remet une fiole remplie d'une étrange potion, juste au cas ou. Il vous indique ensuite la direction du village le plus proche",
+      "choix_disponibles": [
+        {
+          "id": 8,
+          "texte": "Suite",
+          "texte_suivant": 7,
+          "objet_necessaire": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texte": "Vous courrez à perdre haleine, droit devant vous, les buissons vous écorchent les bras et le visage, mais vous courrez toujours...\n",
+      "choix_disponibles": [
+        {
+          "id": 9,
+          "texte": "Suite",
+          "texte_suivant": 7,
+          "objet_necessaire": null
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texte": "Au bout d'un certain temps la forêt semble s'éclaircir et la végétation se fait moins dense. Vous finissez par arriver devant un grand panneau \"bienvenue à  Sophiatawa\" Un petit village se dresse devant vous. seulements quelques baraques de bucherons, qui paraissent délabrées au premier coups d'oeil. Vous vous demandez s'il est possible que quelqu'un vive içi? ",
+      "choix_disponibles": [
+        {
+          "id": 10,
+          "texte": "Vous entendez sur votre droite des éclats de voix et décidez de les suivre",
+          "texte_suivant":8,
+          "objet_necessaire": null
+        },
+        {
+          "id": 11,
+          "texte": "Vous remarquez droit devant vous ce qui semble être un chevalet et du matériel de peinture, que vous décidez d'aller voir de plus près",
+          "texte_suivant":8,
+          "objet_necessaire": null
+        }
+      ]
+    },
+    {
+      "id":8,
+      "texte": "Suite de l'histoire à venir",
+      "choix_disponibles": [
+        {
+          "id": ,
+          "texte": "",
+          "texte_suivant": ,
+          "objet_necessaire": null
+        },
+        {
+          "id": ,
+          "texte": "",
+          "texte_suivant": ,
+          "objet_necessaire": null
+        }
+      ]
+    },
+    {
+      "id": ,
+      "texte": "",
+      "choix_disponibles": [
+        {
+          "id": ,
+          "texte": "",
+          "texte_suivant": ,
+          "objet_necessaire": null
+        },
+        {
+          "id": ,
+          "texte": "",
+          "texte_suivant": ,
+          "objet_necessaire": null
+        }
+      ]
+    }
+  ]
+}

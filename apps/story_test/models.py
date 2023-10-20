@@ -21,7 +21,7 @@ class Story(models.Model):
 
 
 class Choice(models.Model):
-    choice_text = models.CharField(max_length=200)
+    choice_text = models.CharField(max_length=255)
     object_needed = models.IntegerField(blank=True, null=True)
     next_story = models.ForeignKey(Story, on_delete=models.PROTECT, blank=True, null=True)
 
@@ -30,7 +30,7 @@ class Choice(models.Model):
 
 
 class Object(models.Model):
-    object_name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
 
 
 

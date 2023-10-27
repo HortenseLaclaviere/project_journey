@@ -1,0 +1,4 @@
+django==4.2.6
+djangorestframework==3.14.0 # toolkit for building Web APIs
+psycopg2==2.9.9 # pilote Python for PostgresSQL
+black==23.10.1 # formatter

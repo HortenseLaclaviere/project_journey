@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Black">
+    <option name="enabledOnReformat" value="true" />
+    <option name="enabledOnSave" value="true" />
     <option name="executionMode" value="BINARY" />
     <option name="pathToExecutable" value="$USER_HOME$/.pyenv/shims/black" />
-    <option name="sdkUUID" value="7cf48920-7a19-4dfb-971a-b541b5e9a9f2" />
+    <option name="sdkUUID" value="02d9ab36-4936-48d8-ac1b-72435ba14acb" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (projet_perso)" project-jdk-type="Python SDK" />
   <component name="PyCharmProfessionalAdvertiser">

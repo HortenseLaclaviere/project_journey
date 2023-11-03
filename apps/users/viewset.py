@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 
-from apps.story_test.serializers.user_serializer import UserSerializer
+from apps.users.serializer import UserSerializer
 
 
 # ViewSets define the view behavior.

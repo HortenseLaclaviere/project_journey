@@ -3,4 +3,5 @@ djangorestframework==3.14.0 # toolkit for building Web APIs
 psycopg2==2.9.9 # pilote Python for PostgresSQL
 black==23.10.1 # formatter
 pre-commit==3.5.0 #managing and maintaining multi-language pre-commit hooks.
-python-decouple==3.8
+python-decouple==3.8 #Strict separation of settings from code.
+pillow==10.1.0 #Python Imaging Library

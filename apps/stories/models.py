@@ -1,10 +1,9 @@
 from django.db import models
-from apps.choices.models import Choices
 
 
-class Stories(models.Model):
+class Story(models.Model):
     text = models.TextField()
-    choices_available = models.ManyToManyField(Choices, blank=True)
+    choices_available = models.ManyToManyField("choices.Choice", blank=True)
 
     def __str__(self):
         return self.text

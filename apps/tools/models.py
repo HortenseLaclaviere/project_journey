@@ -1,5 +1,5 @@
 from django.db import models
 
 
-class Tools(models.Model):
+class Tool(models.Model):
     name = models.CharField(max_length=50)

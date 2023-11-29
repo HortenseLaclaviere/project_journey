@@ -8,5 +8,5 @@ router.register(r"tool", ToolViewSet, basename="tool")
 
 urlpatterns = [
     path("api/", include(router.urls)),
-    path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
+    path("api-auth/", include("rest_framework.urls", namespace="tool_rest_framework")),
 ]

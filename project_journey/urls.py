@@ -6,5 +6,6 @@ urlpatterns = [
     path("choices/", include("apps.choices.urls")),
     path("players/", include("apps.players.urls")),
     path("story/", include("apps.stories.urls")),
+    path("tool/", include("apps.tools.urls")),
     path("bo_pj/", admin.site.urls),
 ]

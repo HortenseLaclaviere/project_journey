@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from apps.stories.models import Story
+from rest_framework import viewsets
+from apps.stories.serializer import StorySerializer
 
-# Create your views here.
+
+class StoryViewSet(viewsets.ModelViewSet):
+    queryset = Story.objects.all()
+    serializer_class = StorySerializer

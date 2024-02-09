@@ -8,4 +8,4 @@ class Player(models.Model):
     player_tools = models.ManyToManyField("tools.Tool", blank=True)
 
     def __str__(self):
-        return self.user
+        return self.user.username

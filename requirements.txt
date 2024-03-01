@@ -5,3 +5,4 @@ black==23.10.1 # formatter
 pre-commit==3.5.0 #managing and maintaining multi-language pre-commit hooks.
 python-decouple==3.8 #Strict separation of settings from code.
 pillow==10.1.0 #Python Imaging Library
+djangorestframework-simplejwt==4.8.0

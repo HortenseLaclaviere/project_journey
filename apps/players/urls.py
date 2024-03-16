@@ -7,7 +7,7 @@ router = routers.DefaultRouter()
 router.register(r"player", PlayerViewSet, basename="player")
 
 urlpatterns = [
-    path("api/", include(router.urls)),
+    path("", include(router.urls)),
     path(
         "api-auth/", include("rest_framework.urls", namespace="player_rest_framework")
     ),

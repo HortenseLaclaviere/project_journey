@@ -7,6 +7,6 @@ router = routers.DefaultRouter()
 router.register(r"tool", ToolViewSet, basename="tool")
 
 urlpatterns = [
-    path("api/", include(router.urls)),
+    path("", include(router.urls)),
     path("api-auth/", include("rest_framework.urls", namespace="tool_rest_framework")),
 ]

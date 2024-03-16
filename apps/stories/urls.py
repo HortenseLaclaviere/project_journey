@@ -7,6 +7,6 @@ router = routers.DefaultRouter()
 router.register(r"story", StoryViewSet, basename="story")
 
 urlpatterns = [
-    path("api/", include(router.urls)),
+    path("", include(router.urls)),
     path("api-auth/", include("rest_framework.urls", namespace="story_rest_framework")),
 ]

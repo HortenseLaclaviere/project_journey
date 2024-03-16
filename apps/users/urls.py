@@ -7,11 +7,11 @@ from apps.users.views import UserViewSet
 router = routers.DefaultRouter()
 # Register the UserViewSet with the router
 # to define URLs associated with CRUD operations on users.
-router.register(r"users", UserViewSet, basename="user")
+router.register(r"", UserViewSet, basename="user")
 
 urlpatterns = [
     # Wire up our API using automatic URL routing.
-    path("api/", include(router.urls)),
+    path("", include(router.urls)),
     # Configure the URL to access the authentication features of the API.
     # For administration and development
     path("api-auth/", include("rest_framework.urls", namespace="user_rest_framework")),

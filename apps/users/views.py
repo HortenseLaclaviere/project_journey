@@ -1,7 +1,9 @@
 from apps.users.models import User
-from rest_framework import viewsets
 from apps.users.serializer import UserSerializer
 from rest_framework import viewsets, permissions
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 
 
 class CreateUserPermission(permissions.BasePermission):
@@ -34,3 +36,18 @@ class UserViewSet(viewsets.ModelViewSet):
                 permissions.IsAuthenticated,
             ]
         return [permission() for permission in permission_classes]
+
+
+class CurrentUserView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """
+        Récupère les informations de l'utilisateur actuellement connecté.
+        """
+        try:
+            user = request.user
+            serializer = UserSerializer(user, context={"request": request})
+            return Response(serializer.data)
+        except User.DoesNotExist:
+            return Response({"erreur": "Utilisateur non trouvé."}, status=404)

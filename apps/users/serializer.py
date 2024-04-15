@@ -10,7 +10,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         # La classe Meta permet de configurer le sérialiseur en spécifiant des métadonnées pour le modèle.
         model = User
-        fields = ["url", "username", "email", "is_staff", "password"]
+        fields = ["url", "username", "email", "is_staff", "password", "date_joined"]
 
     def create(self, validated_data):
         # Utilise create_user pour hasher le mot de passe correctement

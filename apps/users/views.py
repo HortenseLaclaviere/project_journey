@@ -37,6 +37,14 @@ class UserViewSet(viewsets.ModelViewSet):
             ]
         return [permission() for permission in permission_classes]
 
+    def delete(self, request):
+        try:
+            user = request.user
+            user.delete()
+            return Response({"message": "Utilisateur supprimé."})
+        except User.DoesNotExist:
+            return Response({"erreur": "Utilisateur non trouvé."}, status=404)
+
 
 class CurrentUserView(APIView):
     permission_classes = [permissions.IsAuthenticated]

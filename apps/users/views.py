@@ -39,15 +39,30 @@ class UserViewSet(viewsets.ModelViewSet):
 
 
 class CurrentUserView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
-        """
-        Récupère les informations de l'utilisateur actuellement connecté.
-        """
         try:
             user = request.user
             serializer = UserSerializer(user, context={"request": request})
             return Response(serializer.data)
         except User.DoesNotExist:
             return Response({"erreur": "Utilisateur non trouvé."}, status=404)
+
+
+class UserUpdateView(APIView):
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_object(self):
+        return self.request.user
+
+    def post(self, request):
+        user = self.get_object()
+        serializer = UserSerializer(
+            user, data=request.data, partial=True, context={"request": request}
+        )  # partial=True pour autoriser la modification partielle
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=400)

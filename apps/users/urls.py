@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework import routers
-from apps.users.views import UserViewSet, CurrentUserView
+from apps.users.views import UserViewSet, CurrentUserView, UserUpdateView
 
 # Routers provide an easy way of automatically determining the URL conf.
 # Create an instance of a router (in this case, a DefaultRouter).
@@ -11,6 +11,7 @@ router.register(r"", UserViewSet, basename="user")
 
 urlpatterns = [
     path("me/", CurrentUserView.as_view(), name="current_user"),
+    path("update/", UserUpdateView.as_view(), name="update_user"),
     # Wire up our API using automatic URL routing.
     path("", include(router.urls)),
     # Configure the URL to access the authentication features of the API.
